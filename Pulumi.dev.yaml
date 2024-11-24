@@ -1,0 +1,7 @@
+config:
+  azure-native:location: "WestEurope"  # Azure region where resources will be deployed
+  app_name: "my-dev-app"              # Name of the web app
+
+  storage:accountName: "devstorageacct"  # Name of the storage account
+  storage:sku: "Standard_LRS"           # Storage account SKU
+  storage:kind: "StorageV2"             # Storage account type (StorageV2, BlobStorage, etc.)
