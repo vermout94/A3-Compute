@@ -1,20 +1,2 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environment
+*.pyc
 venv/
-
-# Sensitive files
-.env
-
-# Database files
-*.db
-
-# System files
-.DS_Store
-
-# IDE-related files
-.idea/
-.vscode/

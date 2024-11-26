@@ -22,7 +22,9 @@ htmx = HTMX(app)
 
 
 def get_db_connection():
-    conn = sqlite3.connect("database.db")
+    db_path = os.getenv("DATABASE_PATH", "database.db")
+    print("DATABASE_PATH during database connection:", db_path)
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -140,4 +142,6 @@ def hello():
 
 
 if __name__ == "__main__":
+    print("DATABASE_PATH", os.getenv("DATABASE_PATH"))
     app.run()
+
